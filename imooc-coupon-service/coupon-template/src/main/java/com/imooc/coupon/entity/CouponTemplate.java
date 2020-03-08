@@ -1,5 +1,6 @@
 package com.imooc.coupon.entity;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.imooc.coupon.constant.CouponCategory;
 import com.imooc.coupon.constant.DistributeTarget;
 import com.imooc.coupon.constant.ProductLine;
@@ -7,6 +8,7 @@ import com.imooc.coupon.converter.CouponCategoryConverter;
 import com.imooc.coupon.converter.DistributeTargetConverter;
 import com.imooc.coupon.converter.ProductLineConverter;
 import com.imooc.coupon.converter.RuleConverter;
+import com.imooc.coupon.serialization.CouponTemplateSerialize;
 import com.imooc.coupon.vo.TemplateRule;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -27,11 +29,12 @@ import java.util.Date;
  * Author: chendaoguang
  */
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @EntityListeners(AuditingEntityListener.class)
 @Table(name = "coupon_template")
+@JsonSerialize(using = CouponTemplateSerialize.class)
 public class CouponTemplate implements Serializable {
 
     /** 自增主键 */
