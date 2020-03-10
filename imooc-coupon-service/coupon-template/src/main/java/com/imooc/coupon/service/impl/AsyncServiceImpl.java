@@ -62,7 +62,8 @@ public class AsyncServiceImpl implements IAsyncService {
 
         template.setAvailable(true);
         templateDao.save(template);
-        watch.stop();log.info("Construct CouponCode By Template Cost: {}ms",
+        watch.stop();
+        log.info("Construct CouponCode By Template Cost: {}ms",
                 watch.elapsed(TimeUnit.MILLISECONDS));
 
         // TODO 发送短信或者邮件通知优惠券模板已经可用
