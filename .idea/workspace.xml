@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80b67df6-bd1e-4926-83a3-0b9e8937b32b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/controller/CouponTemplateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/controller/HealthCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/resources/sql/create_db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/resources/sql/create_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/test/java/com/imooc/coupon/TemplateApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/test/java/com/imooc/coupon/service/BuildTemplateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/test/java/com/imooc/coupon/service/TemplateBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/service/impl/AsyncServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/service/impl/AsyncServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-template/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/DistributionApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/constant/CouponStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/converter/CouponStatusConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/entity/Coupon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/serialization/CouponSerialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-coupon-service/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,6 +18,7 @@
     <ignored path="$PROJECT_DIR$/imooc-coupon-service/target/" />
     <ignored path="$PROJECT_DIR$/imooc-coupon-service/coupon-common/target/" />
     <ignored path="$PROJECT_DIR$/imooc-coupon-service/coupon-template/target/" />
+    <ignored path="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +48,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/test/java/com/imooc/coupon/service/BuildTemplateTest.java">
+        <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="27" selection-start-line="27" selection-end-line="28" selection-end-column="28" />
+            <state relative-caret-position="1170">
+              <caret line="65" column="33" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/DistributionApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,22 +70,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/service/ITemplateBaseService.java">
+        <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/converter/CouponStatusConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+            <state relative-caret-position="414">
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/service/impl/TemplateBaseServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/entity/CouponTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="76" column="42" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
+            <state relative-caret-position="288">
+              <caret line="35" column="6" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,49 +96,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/test/java/com/imooc/coupon/service/TemplateBaseTest.java">
+        <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/serialization/CouponSerialize.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+            <state relative-caret-position="324">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/vo/TemplateRule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/vo/TemplateRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
-              <caret line="82" column="60" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
     </leaf>
@@ -137,8 +113,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -154,13 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/coupon-gateway/src/main/java/com/imooc/coupon/filter/RateLimiterFilter.java" />
-        <option value="$PROJECT_DIR$/coupon-gateway/src/main/java/com/imooc/coupon/filter/PreRequestFilter.java" />
-        <option value="$PROJECT_DIR$/coupon-gateway/src/main/java/com/imooc/coupon/filter/AbstractPostZuulFilter.java" />
-        <option value="$PROJECT_DIR$/coupon-gateway/src/main/java/com/imooc/coupon/filter/AbstractPreZuulFilter.java" />
-        <option value="$PROJECT_DIR$/coupon-gateway/src/main/java/com/imooc/coupon/filter/AccessLogFilter.java" />
-        <option value="$PROJECT_DIR$/imooc-coupon-service/pom.xml" />
-        <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-common/pom.xml" />
         <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/conf/WebConfiguation.java" />
         <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/conf/WebConfiguration.java" />
         <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/conf/JacksonConfig.java" />
@@ -205,6 +174,13 @@
         <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/test/java/com/imooc/coupon/service/BuildTemplateTest.java" />
         <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/service/impl/AsyncServiceImpl.java" />
         <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/test/java/com/imooc/coupon/service/TemplateBaseTest.java" />
+        <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/pom.xml" />
+        <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/DistributionApplication.java" />
+        <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/constant/CouponStatus.java" />
+        <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/converter/CouponStatusConverter.java" />
+        <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/serialization/CouponSerialize.java" />
+        <option value="$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/entity/Coupon.java" />
       </list>
     </option>
   </component>
@@ -256,8 +232,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="890" />
-    <option name="width" value="1038" />
+    <option name="x" value="1038" />
+    <option name="width" value="902" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -266,6 +242,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,20 +260,20 @@
               <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
               <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
               <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
-              <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon-distribution" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
               <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
               <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
-              <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon-distribution" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
               <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
               <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
-              <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon-distribution" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -303,7 +281,7 @@
               <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
               <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
               <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
-              <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon-distribution" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -312,7 +290,7 @@
               <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
               <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
               <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
-              <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon-distribution" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -322,7 +300,29 @@
               <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
               <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
               <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
-              <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon-distribution" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon-distribution" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon-distribution" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -333,18 +333,7 @@
               <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
               <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
               <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
-              <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="coupon" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
-              <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon-distribution" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -354,8 +343,6 @@
               <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
               <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
               <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
@@ -363,7 +350,22 @@
               <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
               <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="imooc-coupon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="imooc-coupon" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -372,7 +374,7 @@
               <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
               <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="coupon" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -382,17 +384,15 @@
               <item name="imooc-coupon-service" type="462c0819:PsiDirectoryNode" />
               <item name="coupon-template" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="coupon" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -500,6 +500,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TemplateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="coupon-template" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.imooc.coupon.TemplateApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TemplateBaseTest.testFindId2Template" />
@@ -539,14 +546,13 @@
       <workItem from="1583740714916" duration="11963000" />
       <workItem from="1583849539358" duration="2735000" />
       <workItem from="1583856985919" duration="5000" />
-      <workItem from="1583857076908" duration="766000" />
+      <workItem from="1583857076908" duration="1443000" />
+      <workItem from="1583916551977" duration="7612000" />
+      <workItem from="1584028059849" duration="532000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TemplateApplicationTests_contextLoad - 2020.03.09 at 21h 41m 46s.xml">
-      <configuration name="TemplateApplicationTests.contextLoad" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TemplateApplicationTests_contextLoad - 2020.03.09 at 21h 45m 32s.xml">
       <configuration name="TemplateApplicationTests.contextLoad" configurationId="JUnit" />
     </history-entry>
@@ -574,9 +580,12 @@
     <history-entry file="TemplateBaseTest_testFindAllUsableTemplate - 2020.03.10 at 23h 46m 09s.xml">
       <configuration name="TemplateBaseTest.testFindAllUsableTemplate" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TemplateBaseTest_testFindId2Template - 2020.03.11 at 00h 44m 56s.xml">
+      <configuration name="TemplateBaseTest.testFindId2Template" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72067000" />
+    <option name="totallyTimeSpent" value="80888000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -588,10 +597,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="712" y="0" width="830" height="832" extended-state="0" />
+    <frame x="831" y="0" width="721" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49425286" weight="0.68363637" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49425286" weight="0.3982684" />
       <window_info id="Structure" order="1" sideWeight="0.6091954" side_tool="true" weight="0.27345845" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -601,7 +610,7 @@
       <window_info id="Web" order="7" sideWeight="0.50574714" side_tool="true" weight="0.27345845" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.42120343" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.44" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.60481584" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -609,11 +618,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.47940075" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.47788873" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.67847025" />
       <window_info anchor="bottom" id="Spring" order="12" weight="0.32936507" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info active="true" anchor="bottom" id="Messages" order="14" visible="true" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -630,69 +639,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="117" column="64" lean-forward="true" selection-start-line="117" selection-start-column="64" selection-end-line="117" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8-sources.jar!/com/fasterxml/jackson/databind/ObjectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="538" column="15" selection-start-line="538" selection-start-column="15" selection-end-line="538" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/conf/JacksonConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/vo/CommonResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/annotation/IgnoreResponseAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/advice/CommonResponseDataAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#746#770#0" expanded="true" />
-            <element signature="e#1432#1456#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/bind/annotation/RestControllerAdvice.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/exception/CouponException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -715,12 +661,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imooc-coupon-service/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="jar://D:/jdk/src.zip!/java/util/function/Predicate.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -942,16 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/entity/CouponTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1098">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/resources/sql/create_db.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1040,10 +976,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/vo/TemplateRule.java">
+    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/service/ITemplateBaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="576">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/service/impl/TemplateBaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="76" column="42" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1061,37 +1007,104 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/service/ITemplateBaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/service/impl/TemplateBaseServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="76" column="42" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/test/java/com/imooc/coupon/service/TemplateBaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+        <state relative-caret-position="363">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/vo/TemplateRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="69" column="47" lean-forward="true" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/constant/CouponStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/entity/Coupon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="65" column="33" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/DistributionApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-template/src/main/java/com/imooc/coupon/entity/CouponTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="35" column="6" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/converter/CouponStatusConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-coupon-service/coupon-distribution/src/main/java/com/imooc/coupon/serialization/CouponSerialize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
